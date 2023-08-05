@@ -1,0 +1,47 @@
+
+body{
+    margin: 0;
+    background: url(https://i.imgur.com/4n6CpBz.jpg) rgba(117, 117, 118, 0.097);
+    color: white;
+    text-align: center;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+header{
+    color: rgb(84, 255, 246);
+    margin: 50px;
+}
+
+img{
+	max-width: 50%;
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgb(160, 160, 160) ;
+}
+
+main{
+    padding: 25px;
+}
+
+h2:hover , p:hover {
+    color: rgb(136, 230, 159);
+}
+  
+footer{
+    padding: 0 0 30px 0;
+    text-decoration: none;
+}
+
+.facebook{
+    padding: 10px 40px;
+    color:blue;
+    display: inline-block;
+}
+
+.github{
+    padding: 10px 40px;
+    color:white;
+    display: inline-block;
+}
