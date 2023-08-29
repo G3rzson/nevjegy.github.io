@@ -1,18 +1,24 @@
 
-body{
-    margin: 0;
-    background: url(https://i.imgur.com/4n6CpBz.jpg) rgba(117, 117, 118, 0.097);
-    color: white;
-    text-align: center;
-}
-
 *{
 	box-sizing: border-box;
 }
 
-header{
+body{
+    margin: 0 auto;
+    background: url(https://i.imgur.com/4n6CpBz.jpg) rgba(117, 117, 118, 0.097);
+    color: white;
+    text-align: center;
+    max-width: 1000px;
     color: rgb(84, 255, 246);
-    margin: 50px;
+    letter-spacing: 0.2rem;
+}
+
+header{
+    margin: 2rem;
+}
+
+header h1{
+    font-size: 3rem;
 }
 
 img{
@@ -21,27 +27,65 @@ img{
     box-shadow: 0 0 50px rgb(160, 160, 160) ;
 }
 
-main{
-    padding: 25px;
+.skills ul{
+    font-size: 1.5rem;
+    padding: 0;  
 }
 
-h2:hover , p:hover {
-    color: rgb(136, 230, 159);
+.skills ul li{
+    list-style: none;
+    text-align: left;
+    font-size: 1rem;
+    padding: 0.5rem 0 0.5rem 2rem;
 }
-  
+
+/* media query */
+@media (min-width:800px) {
+    .profile img{
+        width: 250px;
+        border-radius: 50%;
+        box-shadow: 0 0 50px rgb(160, 160, 160);
+        float: right;
+        margin: 1rem 2rem;
+    } 
+}
+
+/* clearfix */
+footer::after{
+	content: '';
+	clear: both;
+	display: table;
+}
+
 footer{
-    padding: 0 0 30px 0;
+    padding: 0 0 2rem 0;
     text-decoration: none;
 }
 
+footer p{
+    display: none;
+}
+
 .facebook{
-    padding: 10px 40px;
-    color:blue;
+    padding: 1rem 2rem;
     display: inline-block;
 }
 
+.facebook i{
+    color:blue;
+}
+
 .github{
-    padding: 10px 40px;
-    color:white;
+    padding: 1rem 2rem;
     display: inline-block;
+}
+
+.github i{
+    color:white;
+}
+
+@media (min-width:800px) {
+    footer p{
+        display: block;
+    }
 }
